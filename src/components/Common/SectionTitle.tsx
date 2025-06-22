@@ -4,12 +4,14 @@ const SectionTitle = ({
   width = "570px",
   center,
   mb = "100px",
+  points
 }: {
   title: string;
   paragraph: string;
   width?: string;
   center?: boolean;
   mb?: string;
+  points: Array<{ title: string; description: string }>;
 }) => {
   return (
     <>
@@ -23,6 +25,16 @@ const SectionTitle = ({
         <p className="text-base leading-relaxed! text-body-color md:text-lg">
           {paragraph}
         </p>
+        {points && (
+        <ul className="list-disc ml-6 mt-4 space-y-2 text-left">
+          {points.map((point: { title: string; description: string }, index: number) => (
+            <li key={index}>
+              <span className="font-medium">{point.title}</span>
+              {point.description && <> — {point.description}</>}
+            </li>
+          ))}
+        </ul>
+      )}
       </div>
     </>
   );

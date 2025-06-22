@@ -11,13 +11,11 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h2 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Empowering Cellular Intelligence
-                </h2>
+              <h4 className="mb-5 text-2xl font-bold leading-snug text-black dark:text-white sm:text-3xl sm:leading-snug md:text-4xl md:leading-snug">
+                Smarter Batteries. Smarter Mobility
+              </h4>
                 <p className="mb-12 text-base leading-relaxed! text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                Harnessing the power of AI to revolutionize cellular data and connectivity.
-                Real-time insights, smart automation, and intelligent control at your fingertips.
-                Driving the future of connected devices through advanced cellular intelligence.
+                  We are a deep-tech startup revolutionizing battery intelligence with advanced modeling, estimation, and digital twin technologies. From real-time SOC/SOH estimation to lifetime prediction, we bring precision and reliability to battery management systems (BMS) across electric vehicles, energy storage, and beyond.
                 </p>
                 {/* <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
