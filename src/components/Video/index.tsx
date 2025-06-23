@@ -8,7 +8,7 @@ import SectionTitle from "../Common/SectionTitle";
 export default function Video() {
   const [isOpen, setOpen] = useState(false);
   return (
-    <section className="py-16 md:py-20 lg:py-28">
+    <section className="py-4 md:py-8 lg:py-12">
       <div className="container">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
@@ -66,7 +66,7 @@ export default function Video() {
   );
   // return (
   //   <>
-  //     <section className="relative z-10 py-16 md:py-20 lg:py-28">
+  //     <section className="relative z-10 py-4 md:py-8 lg:py-12">
   //       <div className="container">
   //         <SectionTitle
   //           title="Partner With Us - We are ready to help"
