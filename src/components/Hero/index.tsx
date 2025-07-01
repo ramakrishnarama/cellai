@@ -12,7 +12,7 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
               <h4 className="mb-5 text-2xl font-bold leading-snug text-black dark:text-white sm:text-3xl sm:leading-snug md:text-4xl md:leading-snug">
-                Smarter Batteries. Smarter Mobility
+                  Powering the Future of Battery Intelligence
               </h4>
                 <p className="mb-12 text-base leading-relaxed! text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   We are a deep-tech startup revolutionizing battery intelligence with advanced modeling, estimation, and digital twin technologies. From real-time SOC/SOH estimation to lifetime prediction, we bring precision and reliability to battery management systems (BMS) across electric vehicles, energy storage, and beyond.

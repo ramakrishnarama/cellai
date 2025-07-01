@@ -24,16 +24,16 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Solutions."
+                title="Our Solutions."
                 paragraph=""
                 mb="44px"
                 points={[{
                   title: 'EV Battery Management',
-                  description : "Scalable BMS solutions for 2W, 3W, and LCVs."
+                  description : "Scalable BMS solutions for 2W, 3W, and LCVs. Or integrate our SOC/SOH estimation into your platform."
                 },
                 {
                   title: 'Battery Analytics API',
-                  description : "Integrate our SOC/SOH estimation into your platform."
+                  description : "Integrate your data with our dashboard. Receive insights, alerts and alarms."
                 },
                 {
                   title: 'Digital Twin Consulting',
@@ -66,9 +66,9 @@ const AboutSectionOne = () => {
             </div>
 
             <div className="w-full px-4 lg:w-1/2">
-              <div className="relative mx-auto aspect-25/24 max-w-[550px] lg:mr-0">
+              <div className="relative mx-auto aspect-25/24 flex h-[400px] w-full max-w-[650px] lg:mr-0">
                 <Image
-                  src="/images/cellAi/batteryPathways.png"
+                  src="/images/cellAi/BatteryNewPathways.png"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"

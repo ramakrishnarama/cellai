@@ -13,11 +13,11 @@ export default function Video() {
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
             <div
-              className="relative mx-auto mb-12 aspect-25/24 max-w-[550px] text-center lg:m-0"
+              className="relative mx-auto mb-12 aspect-25/24 flex h-[150px] w-full max-w-[650px] text-center lg:m-0"
               data-wow-delay=".15s"
             >
               <Image
-                src="/images/cellAi/ourTechnology.png"
+                src="/images/cellAi/solutions.png"
                 alt="about image"
                 fill
                 className="drop-shadow-three dark:hidden dark:drop-shadow-none"
