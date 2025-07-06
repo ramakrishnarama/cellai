@@ -57,10 +57,10 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/c.jpeg"
+                  src="/images/logo/cellAiNew.png"
                   alt="logo"
-                  width={50}
-                  height={50}
+                  width={150}
+                  height={150}
                   className="dark:hidden"
                 />
                 <Image
