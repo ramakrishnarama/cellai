@@ -19,6 +19,18 @@ const menuData: Menu[] = [
     path: "/contactus",
     newTab: false,
   },
+  {
+    id: 4,
+    title: "Technology",
+    path: "/#features", // anchor to section
+    newTab: false,
+  },
+  {
+    id: 4,
+    title: "Solutions",
+    path: "/#solutions", // anchor to section
+    newTab: false,
+  }  
   // {
   //   id: 33,
   //   title: "Blog",
