@@ -9,60 +9,104 @@ export default function Video() {
   const [isOpen, setOpen] = useState(false);
   return (
     <section className="py-4 md:py-8 lg:py-12">
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap items-center">
-          <div className="w-full px-4 lg:w-1/2">
-            <div
-              className="relative mx-auto mb-12 aspect-25/24 flex h-[150px] w-full max-w-[650px] text-center lg:m-0"
-              data-wow-delay=".15s"
-            >
-              <Image
-                src="/images/cellAi/solutions.png"
-                alt="about image"
-                fill
-                className="drop-shadow-three dark:hidden dark:drop-shadow-none"
+  <div className="container">
+    <div className="-mx-4 flex flex-col-reverse lg:flex-row items-center">
+      
+      {/* IMAGE Section - comes second in DOM, first in desktop */}
+      <div className="w-full px-4 lg:w-1/2">
+        <div
+          className="relative mx-auto mb-12 aspect-25/24 flex h-[150px] w-full max-w-[650px] text-center lg:m-0"
+          data-wow-delay=".15s"
+        >
+          <Image
+            src="/images/cellAi/solutions.png"
+            alt="about image"
+            fill
+            className="drop-shadow-three dark:hidden dark:drop-shadow-none"
+          />
+        </div>
+      </div>
+
+      {/* TEXT Section - comes first in DOM, shows first on mobile due to flex-col-reverse */}
+      <div className="w-full px-4 lg:w-1/2">
+        <div className="max-w-[470px]">
+          <div className="mb-9">
+            <div className="container">
+              <SectionTitle
+                title="Partner With Us - We are ready to help"
+                paragraph="We’re actively seeking partnerships with : Let’s co-create intelligent, reliable, and sustainable energy storage solutions."
+                center
+                mb="80px"
+                points={[
+                  { title: 'EV OEMs', description: "" },
+                  { title: 'Battery Pack Integrators', description: "" },
+                  { title: 'Fleet Operators', description: "" },
+                  { title: 'Battery Swapping Infrastructure Providers', description: "" },
+                ]}
               />
-              {/* <Image
-                src="/images/about/about-image-2-dark.svg"
-                alt="about image"
-                fill
-                className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
-              /> */}
-            </div>
-          </div>
-          <div className="w-full px-4 lg:w-1/2">
-            <div className="max-w-[470px]">
-              <div className="mb-9">
-              <div className="container">
-                <SectionTitle
-                  title="Partner With Us - We are ready to help"
-                  paragraph="We’re actively seeking partnerships with : Let’s co-create intelligent, reliable, and sustainable energy storage solutions."
-                  center
-                  mb="80px"
-                  points={[{
-                    title: 'EV OEMs',
-                    description : ""
-                  },
-                  {
-                    title: 'Battery Pack Integrators',
-                    description : ""
-                  },
-                  {
-                    title: 'Fleet Operators',
-                    description : ""
-                  },
-                  {
-                    title: 'Battery Swapping Infrastructure Providers',
-                    description : ""
-                  }]}
-                />
-              </div>
-               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+    // <section className="py-4 md:py-8 lg:py-12">
+    //   <div className="container">
+    //     <div className="-mx-4 flex flex-wrap items-center">
+    //       <div className="w-full px-4 lg:w-1/2">
+    //         <div
+    //           className="relative mx-auto mb-12 aspect-25/24 flex h-[150px] w-full max-w-[650px] text-center lg:m-0"
+    //           data-wow-delay=".15s"
+    //         >
+    //           <Image
+    //             src="/images/cellAi/solutions.png"
+    //             alt="about image"
+    //             fill
+    //             className="drop-shadow-three dark:hidden dark:drop-shadow-none"
+    //           />
+    //           {/* <Image
+    //             src="/images/about/about-image-2-dark.svg"
+    //             alt="about image"
+    //             fill
+    //             className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
+    //           /> */}
+    //         </div>
+    //       </div>
+    //       <div className="w-full px-4 lg:w-1/2">
+    //         <div className="max-w-[470px]">
+    //           <div className="mb-9">
+    //           <div className="container">
+    //             <SectionTitle
+    //               title="Partner With Us - We are ready to help"
+    //               paragraph="We’re actively seeking partnerships with : Let’s co-create intelligent, reliable, and sustainable energy storage solutions."
+    //               center
+    //               mb="80px"
+    //               points={[{
+    //                 title: 'EV OEMs',
+    //                 description : ""
+    //               },
+    //               {
+    //                 title: 'Battery Pack Integrators',
+    //                 description : ""
+    //               },
+    //               {
+    //                 title: 'Fleet Operators',
+    //                 description : ""
+    //               },
+    //               {
+    //                 title: 'Battery Swapping Infrastructure Providers',
+    //                 description : ""
+    //               }]}
+    //             />
+    //           </div>
+    //            </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </section>
   );
   // return (
   //   <>
