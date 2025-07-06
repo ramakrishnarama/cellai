@@ -57,11 +57,11 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/cellai.jpeg"
+                  src="/images/logo/c.jpeg"
                   alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
+                  width={50}
+                  height={50}
+                  className="dark:hidden"
                 />
                 <Image
                   src="/images/logo/logo.svg"
