@@ -2,8 +2,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Cell AI",
-  description: "Cell AI",
+  title: "Solutions | Cell AI Battery Intelligence",
+  description:
+    "Explore Cell AI's solutions for EV battery management, SOC/SOH estimation, digital twin, and IoT battery analytics.",
 };
 
 const ContactPage = () => {

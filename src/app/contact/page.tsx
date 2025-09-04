@@ -4,9 +4,9 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Contact Page for Startup Nextjs Template",
-  // other metadata
+  title: "Solutions | Cell AI Battery Intelligence",
+  description:
+    "Explore Cell AI's solutions for EV battery management, SOC/SOH estimation, digital twin, and IoT battery analytics.",
 };
 
 const ContactPage = () => {

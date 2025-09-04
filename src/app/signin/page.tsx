@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sign In Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Sign In Page for Startup Nextjs Template",
-  // other metadata
+  title: "Solutions | Cell AI Battery Intelligence",
+  description:
+    "Explore Cell AI's solutions for EV battery management, SOC/SOH estimation, digital twin, and IoT battery analytics.",
 };
 
 const SigninPage = () => {

@@ -5,9 +5,9 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page | Cell AI",
-  description: "Cell AI",
-  // other metadata
+  title: "Solutions | Cell AI Battery Intelligence",
+  description:
+    "Explore Cell AI's solutions for EV battery management, SOC/SOH estimation, digital twin, and IoT battery analytics.",
 };
 
 const Blog = () => {
