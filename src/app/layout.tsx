@@ -1,13 +1,10 @@
-"use client";
-
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "../styles/index.css";
 import { Providers } from "./providers";
-import { Metadata } from "next";
-import Script from "next/script";
+import type { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Cell AI",
     images: [
       {
-        url: "https://www.cellai.in/images/logo/cellAi.svg", // ✅ deployed logo path
+        url: "https://www.cellai.in/images/logo/cellAi.svg",
         width: 800,
         height: 800,
         alt: "Cell AI Logo",
@@ -51,7 +48,7 @@ export const metadata: Metadata = {
     images: ["https://www.cellai.in/images/logo/cellAi.svg"],
   },
   icons: {
-    icon: "/images/logo/cellAi.svg", // ✅ favicon/logo reference
+    icon: "/images/logo/cellAi.svg",
   },
 };
 
@@ -62,29 +59,6 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head>
-        {/* ✅ Schema.org JSON-LD */}
-        <Script
-          id="schema-org"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Cell AI",
-              url: "https://www.cellai.in",
-              logo: "https://www.cellai.in/images/logo/cellAi.svg",
-              contactPoint: {
-                "@type": "ContactPoint",
-                email: "cellaiinnovations@gmail.com",
-                contactType: "Customer Support",
-              },
-              sameAs: [],
-            }),
-          }}
-        />
-      </head>
-
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
           <Header />
