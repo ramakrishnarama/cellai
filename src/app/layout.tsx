@@ -6,7 +6,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "../styles/index.css";
 import { Providers } from "./providers";
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
