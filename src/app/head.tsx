@@ -12,7 +12,7 @@ export default function Head() {
               logo: "https://www.cellai.in/images/logo/cellAi.svg",
               contactPoint: {
                 "@type": "ContactPoint",
-                email: "cellaiinnovations@gmail.com",
+                email: "tech@cellai.in",
                 contactType: "Customer Support",
               },
             }),

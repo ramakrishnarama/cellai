@@ -59,8 +59,8 @@ const ContactPage = () => {
               </h1>
               <p>
                 <strong>We’d love to hear from you!</strong> Whether you’re an OEM, battery pack developer, energy storage integrator, or investor, let’s explore how we can work together. Connect us at{" "} 
-                <a href="mailto:cellaiinnovations@gmail.com" className="font-bold text-blue-600 hover:underline">
-                   cellaiinnovations@gmail.com
+                <a href="mailto:tech@cellai.in" className="font-bold text-blue-600 hover:underline">
+                   tech@cellai.in
                 </a>.
               </p>
             </div>
