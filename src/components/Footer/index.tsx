@@ -26,7 +26,8 @@ export default function Footer6() {
                 icon: "ti-location-pin",
                 content: (
                   <>
-                    101 Tech Park Road <br /> Bengaluru, India
+                    EV COE, JSSATE-B Campus,Dr.Vishnuvardhan Rd,
+                    Uttarahalli-Kengeri Main Road, Srinivaspura, <br /> Bengaluru - 560060, India
                   </>
                 ),
               },
