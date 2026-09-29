@@ -1,87 +1,73 @@
+"use client";
+
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
-
-const checkIcon = (
-  <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
-    <path d="M5.8535 12.6631C5.65824 12.8584 5.34166 12.8584 5.1464 12.6631L0.678505 8.1952C0.483242 7.99994 0.483242 7.68336 0.678505 7.4881L2.32921 5.83739C2.52467 5.64193 2.84166 5.64216 3.03684 5.83791L5.14622 7.95354C5.34147 8.14936 5.65859 8.14952 5.85403 7.95388L13.3797 0.420561C13.575 0.22513 13.8917 0.225051 14.087 0.420383L15.7381 2.07143C15.9333 2.26669 15.9333 2.58327 15.7381 2.77854L5.8535 12.6631Z" />
-  </svg>
-);
+import { motion } from "framer-motion";
 
 const AboutSectionOne = () => {
-  const List = ({ text }) => (
-    <p className="text-body-color mb-5 flex items-center text-lg font-medium">
-      <span className="bg-primary/10 text-primary mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md">
-        {checkIcon}
-      </span>
-      {text}
-    </p>
-  );
-
   return (
-    <section id="solutions" className="pt-4 md:pt-10 lg:pt-12">
-      <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="Our Solutions."
-                paragraph=""
-                mb="44px"
-                points={[{
-                  title: 'EV Battery Management',
-                  description : "Scalable BMS solutions for 2W, 3W, and LCVs. Or integrate our SOC/SOH estimation into your platform."
+    <section id="solutions" className="relative py-24 bg-white overflow-hidden">
+      {/* Subtle blue blurred glow for background depth */}
+      <div className="absolute top-[-120px] left-[-80px] w-[400px] h-[400px] bg-[#94A9FF]/20 blur-3xl rounded-full"></div>
+      <div className="absolute bottom-[-150px] right-[-100px] w-[400px] h-[400px] bg-[#4D6DE8]/15 blur-3xl rounded-full"></div>
+
+      <div className="relative container mx-auto px-6">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-24">
+          {/* === Left Content === */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="w-full lg:w-1/2 bg-white rounded-3xl p-10 shadow-[0_8px_25px_rgba(77,109,232,0.12)] hover:shadow-[0_10px_35px_rgba(77,109,232,0.18)] border border-[#E6EAFF] transition-all duration-300"
+          >
+            <SectionTitle
+              title="Our Solutions"
+              paragraph="Empowering battery innovation with our scalable, model-based solutions and advanced analytics."
+              mb="32px"
+              points={[
+                {
+                  title: "EV Battery Management —",
+                  description:
+                    "Scalable BMS solutions for 2W, 3W, and LCVs. Integrate SOC/SOH estimation directly into your platform.",
                 },
                 {
-                  title: 'Battery Analytics API',
-                  description : "Integrate your data with our dashboard. Receive insights, alerts and alarms."
+                  title: "Battery Analytics API —",
+                  description:
+                    "Integrate your data seamlessly with our dashboard. Gain actionable insights, alerts, and reports.",
                 },
                 {
-                  title: 'Digital Twin Consulting',
-                  description : "Customize RUL prediction models for your battery chemistry."
+                  title: "Digital Twin Consulting —",
+                  description:
+                    "Customize RUL prediction models and simulate real-world behavior for your specific battery chemistry.",
                 },
                 {
-                  title: 'Lab to Road',
-                  description : "End-to-end support from cell characterization to vehicle validation."
-                }]}
+                  title: "Lab to Road —",
+                  description:
+                    "End-to-end validation support from cell characterization to on-road deployment.",
+                },
+              ]}
+            />
+          </motion.div>
+
+          {/* === Right Image === */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="w-full lg:w-1/2 flex justify-center"
+          >
+            <div className="relative w-full max-w-[600px] aspect-[25/22] rounded-3xl overflow-hidden shadow-[0_15px_40px_rgba(77,109,232,0.2)]">
+              <Image
+                src="/images/cellAi/solutionsCellAi3d.png"
+                alt="Battery Solutions"
+                fill
+                className="object-contain"
+                priority
               />
-
-              <div
-                className="mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                {/* <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
-                  </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
-                  </div>
-                </div> */}
-              </div>
+              {/* Soft radial light overlay for 3D shine */}
+              <div className="absolute inset-0 bg-gradient-radial from-white/30 to-transparent"></div>
             </div>
-
-            <div className="w-full px-4 lg:w-1/2">
-              <div className="relative mx-auto aspect-25/24 flex h-[400px] w-full max-w-[650px] lg:mr-0">
-                <Image
-                  src="/images/cellAi/BatteryNewPathways.png"
-                  alt="about-image"
-                  fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
-                />
-                {/* <Image
-                  src="/images/about/about-image-dark.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
-                /> */}
-              </div>
-            </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
